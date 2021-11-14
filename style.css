@@ -26,6 +26,12 @@ img {
     outline-offset: -6px;
 }
 
+hr {
+    border: 1px solid var(--green);
+    width: 35px;
+    margin: 10px 0;
+}
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(./assets/powerwashing-hero-1024x683.jpg);
     background-size: cover;

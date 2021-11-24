@@ -1,3 +1,4 @@
+/* https://www.modularscale.com/?1,1140,12&em&1.333 */
 @import url('https://fonts.googleapis.com/css?family=Baskervville');
 
 * {
@@ -7,6 +8,7 @@
 :root {
     --blue: #58b8e8;
     --green: #71bf45;
+    --grey: #969892;
 }
 
 body {
@@ -16,10 +18,16 @@ body {
 
 h1 {
     color: white;
-    font-size: 3.905em;
+    font-size: 2.369em;
     font-weight: 600;
     line-height: normal;
 }
+
+h2 { font-size: 2.045em }
+h3 { font-size: 1.777em }
+h4 { font-size: 1.605em }
+h5 { font-size: 1.333em }
+h6 { font-size: 1.204em }
 
 img {
     outline: 1px solid white;
@@ -82,13 +90,22 @@ hr {
     padding: 100px 10px;
 }
 
-.services-hero {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(./assets/services-hero.jpg);
+.page-hero {
+    background-color: var(--grey);
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-position: center 30%;
     background-repeat: no-repeat;
-    height: 45vh;
+    height: 35vh;
 }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li:before {
+    content: '✔️   ';
+  }
